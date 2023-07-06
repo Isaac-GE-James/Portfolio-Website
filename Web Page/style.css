@@ -1,0 +1,18 @@
+.flexbox-container {
+    display: flex;
+}
+
+.flexbox-item {
+    width: 200px;
+    margin: 20px;
+}
+
+.flexbox-item-1 {
+    min-height: 200px;
+    background-color: red;
+}
+
+.flexbox-item-2 {
+    min-height: 200px;
+    background-color: blue;
+}

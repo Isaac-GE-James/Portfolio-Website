@@ -1,5 +1,5 @@
 :root {
-    --pri-col-dark: #233D4D;
+    --pri-col-dark: #0b0c0e;
     --pri-col-light: #fff7e9;
     --sec-col: #A1C181;
     --sec-col-acc: #619B8A;
@@ -14,12 +14,18 @@
 }
 
 body {
-    display: grid;
+
     min-height: 100vh;
-    place-items: center;
+    
     line-height: 1.6;
     background-color: var(--pri-col-dark);
     font-family: sans-serif
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
 .card {
@@ -29,8 +35,9 @@ body {
     background-size: cover;
     background-position: center;
 
+    margin: 5rem;
     padding-top: 10rem;
-    max-width: 35ch;
+    width: 35ch;
     border-radius: 0.75rem;
     overflow: hidden;
     

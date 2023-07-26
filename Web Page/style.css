@@ -132,10 +132,48 @@ body {
     background: var(--sec-col-acc);
 }
 
-.title {
-    padding: 5rem;
-    color: var(--pri-col-light);
+.navbar {
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
 }
+
+.navbar-div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar-title {
+    color: var(--pri-col-light); 
+    font-size: 40px;
+    font-weight: bold;
+    text-decoration: none;   
+    transform: scale(1);
+    transition: transform 200ms ease;
+}
+
+.navbar-title:hover,
+.navbar-title:focus {
+    transform: scale(1.1);
+}
+
+.navbar-icon {  
+    width: 3.5rem;
+    display: inline-block;
+}
+
+
+.navbar-icon-img {  
+    width: 3.5rem;
+    transform: scale(1);
+    transition: transform 200ms ease;
+}
+
+.navbar-icon-img:hover,
+.navbar-icon-img:focus {
+    transform: scale(1.1);
+}
+
 
 .subtitle {
     color: var(--pri-col-light);

@@ -1,10 +1,10 @@
 :root {
     --pri-col-dark: #0b0c0e;
     --pri-col-light: #fff7e9;
-    --sec-col: #A1C181;
-    --sec-col-acc: #619B8A;
-    --tir-col: #FE7F2D;
-    --tri-col-acc: #FCCA46;
+    --sec1-col: #00CC8E;
+    --sec1-col-acc: #038373;
+    --sec2-col: #C62368;
+    --sec2-col-acc: #FE7F2D;
 }
 
 * {
@@ -105,7 +105,7 @@ body {
     left: calc(var(--padding) * -1);
     bottom: 0;
     width: calc(100% + var(--padding));
-    background: var(--sec-col);
+    background: var(--sec1-col);
     
     transform: scaleX(0);
     transform-origin: left;
@@ -122,14 +122,14 @@ body {
     display: inline-block;
     text-decoration: none;
     color: var(--pri-col-dark);
-    background: var(--sec-col);
+    background: var(--sec1-col);
     padding: 0.5em 1em;
     border-radius: 0.75rem;
 }
 
 .button:hover,
 .button:focus {
-    background: var(--sec-col-acc);
+    background: var(--sec1-col-acc);
 }
 
 .navbar {
@@ -141,6 +141,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    background: var(--pri-col-dark);
 }
 
 .navbar-title {
@@ -158,13 +159,13 @@ body {
 }
 
 .navbar-icon {  
-    width: 3.5rem;
+    width: 2rem;
     display: inline-block;
 }
 
 
 .navbar-icon-img {  
-    width: 3.5rem;
+    width: 2rem;
     transform: scale(1);
     transition: transform 200ms ease;
 }
@@ -177,4 +178,51 @@ body {
 
 .subtitle {
     color: var(--pri-col-light);
+}
+
+.text {
+    color: var(--pri-col-light);
+    width: 80ch;
+}
+
+.seperator1 {
+    background: var(--sec2-col);
+}
+
+.seperator2 {
+    background: var(--sec1-col-acc);
+}
+
+.seperator-top1 {
+    aspect-ratio: 960/200;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    background-image: url(Images/wave_top.svg);
+}
+
+
+.seperator-bottom1 {
+    aspect-ratio: 960/200;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    background-image: url(Images/wave_bottom.svg);
+}
+
+.seperator-top2 {
+    aspect-ratio: 960/200;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    background-image: url(Images/wave_top_2.svg);
+}
+
+
+.seperator-bottom2 {
+    aspect-ratio: 960/200;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    background-image: url(Images/wave_bottom_2.svg);
 }

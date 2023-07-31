@@ -35,7 +35,7 @@ body {
     
     line-height: 1.6;
     background-color: var(--pri-col-dark);
-    font-family: sans-serif
+    font-family: sans-serif;
 }
 
 .container {
